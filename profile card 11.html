@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Profile card</title>
+<style>
+  
+  * {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+body {
+  font-family:"Roboto",sans-serif;
+  background-color: #e5edef;
+}
+.profile-card {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:350px;
+  background:#fff;
+  border:1px solid #eee;
+  text-align:center;
+  border-radius:10px;
+  box-shadow:0px 5px 5px 2px rgba(0,0,0,0.1);
+}
+.profile-card .avatar {
+  padding:20px 0px 10px;
+}
+.profile-card .avatar img {
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  border: 5px solid #e6e9ec;
+}
+.profile-card .profile-type {
+  position:absolute;
+  top:15px;
+  left:15px;
+  background:#f10d60;
+  color:#fff;
+  padding:5px 8px;
+  border-radius:5px;
+  font-size:13px;
+  font-weight:600;
+}
+.profile-card .details {
+  padding:10px 30px;
+}
+.profile-card .details h1 {
+  font-size:25px;
+  color:#111;
+  letter-spacing: 1px;
+  margin-bottom:5px;
+}
+.profile-card .details h2 {
+  font-size:15px;
+  margin-bottom:12px;
+  color:#0393a7;
+}
+.profile-card .details p {
+  font-size:15px;
+  color:#555;
+}
+.profile-card .numbers {
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-around;
+}
+.profile-card .numbers p {
+  font-size:14px;
+  margin-bottom:2px;
+  color:#6c7075;
+}
+.profile-card .numbers h2 {
+  font-size:18px;
+
+  color:#444;
+}
+.profile-card .btns {
+  padding:10px 30px 25px;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+.profile-card .btns button {
+  flex:1;
+  padding:10px 20px;
+  cursor:pointer;
+  outline:none;
+  font-size:15px;
+  font-weight:600;
+  border-radius:5px;
+}
+.profile-card .btns button.outline {
+  border:2px solid #1778e8;
+  color:#111;
+  margin-right: 15px;
+  background:transparent;
+}
+.profile-card .btns button.fill {
+  background:#1083e8;
+  color:#fff;
+  border:none;
+}
+.btns button.outline:hover{
+ /*   border: 2px solid #10cbe0; */
+
+       /* or */
+
+   background: #1083e8;
+
+   color: #fff;
+}
+.btns button.fill:hover{
+ background: #03416a; 
+
+
+}
+
+  </style>
+</head>
+<body>
+ <div class="profile-card">
+  <div class="profile-type">PRO</div>
+  <div class="avatar">
+    <img src="https://lh3.googleusercontent.com/-b6RjL8R6zdw/VEO_QVp9W3I/AAAAAAAAAao/Jhtf36ZKeHkoFQrd99_q4eZBia9ai78DQCEwYBhgLKtMDABHVOhz5K0mYPrRuPMABg2uN0uQqHEi10gfoJJX9XaISMcL-wxVcZ3IEXH9cPHGYaKwci5msmilPKCY2yLeoo3rkqPo8250vHhtsFT1dhYqrl1nSvlzhOcvRwwEB_M16TmPWgP7lTT29pI6VJ62Y092trZ3Y2MnSTUAI1995j7K3ba3YOKF53D-OqRCaYdAymo9an7TlpVhRYxhHL3sjKVVkM4IqBD_w2Osr5E9Dn8brPtnxg_fZFInl61r-hpWXI-wkHII0iP4Mlb_VUclYprSt1nlJz10-PYDMNxy2bru7ZKdOUmXaUc3iwA0Hjby4PyOU9EuqWyg0U1g85JbseuXuB4gg_MKr_pb0X6Ogjat_iSiGp80By9MKjJXq4DuY0EeuAr-ZfnB225Jl9z4d92yQsqUrBrfqaBH0Ya9YS9EwqFm1PiLpZLW-8a-3-LxoYxPAwyrUg-yU0L98wrdU7JzrbXkwfLp2mHmpZiU8OHMRdvNnTR8ljviR4MS3jXXrx9wtASrHbea9fFzViTJ7VMRBltcwMLFdr7gNS5YJ2MFwib5dUBXIeUtkpnhRUn8a7seuHbxMIJzj_X1SVhKw7ztP8Aw-1ZJRwkXxi_v8To0YFtcwr66NiwY/w139-h140-p/DSCN1017.JPG" alt="">
+  </div>
+  <div class="details">
+    <h1>Abijith A</h1>
+    <h2>Web Designer</h2>
+    <p>An Electronics and Communication engineering student passionate about Robotics and Web design.</p>
+  </div>
+  <div class="numbers">
+    <div class="item">
+      <p>Projects</p>
+      <h2>21</h2>
+    </div>
+    <div class="item">
+      <p>Following</p>
+      <h2>120</h2>
+    </div>
+    <div class="item">
+      <p>Followers</p>
+      <h2>522</h2>
+    </div>
+  </div>
+  <div class="btns">
+    <button class="outline">Follow</button>
+    <button class="fill">Hire Me</button>
+  </div>
+</div>
+
+</body>
+</html>
